@@ -1,0 +1,408 @@
+@use './colors' as color;
+@import './animate';
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-padding-top: 78.5px;
+}
+
+body{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: color.$bg-color;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.underline{
+    position: relative;
+    width: 60px;
+    height: 4px;
+    margin: 0 auto 40px;
+    background-color: color.$main-color;
+}
+.blue-text{
+    color: color.$main-color;
+}
+.shadow-bg{
+    background-color: rgba(0,0,0,0.8);
+}
+nav{
+    text-transform: uppercase;
+    color: color.$white;
+    z-index: 1;
+    transition: background-color 0.6s;
+    i{
+        color:color.$white;
+    }
+    .nav-link:hover{
+        color: color.$main-color;
+    }
+    .nav-link:hover{
+        color: color.$main-color;
+    }
+    .navbar-brand{
+        font-weight: bold;
+        color:color.$white;
+    }
+    .navbar-brand:hover{
+        font-weight: bold;
+        color:color.$white;
+
+    }
+    .navbar-nav{
+        .nav-link{
+            color: color.$white;
+        }
+        .nav-link:hover{
+            color: color.$main-color;
+        }
+
+        
+    }
+    .navbar-brand:visited{
+        color:color.$white;
+    }
+    .fa-bars{
+        padding: 10px;
+    }
+   }
+   .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: color.$main-color;
+   }
+
+ 
+header{
+    position: relative;
+ i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    color: color.$white;
+    z-index: 10;
+    
+}
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+p{
+    font-size: 14px;
+}
+.hero-img{
+        position: relative;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-image: url('../img/playstation-gca8f00312_640.jpg');
+        z-index: 0;
+       }
+.hero-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 10;
+    
+}
+.hero-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #0000001e, $alpha: 0.8);
+    z-index: 5;
+}
+.btn {
+    text-transform: uppercase;
+}
+}
+.aboutus{
+    i{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .aboutus-card-title{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .aboutus-card-text{
+        font-size: 14px;
+    }
+    .aboutus-hover{
+        transition: 0.6s;
+    }
+    .aboutus-hover:hover{
+        color: color.$main-color;
+    }
+}
+.platforms{
+    position: relative;
+    background-image: url('../img/technology-g6190714e5_640.jpg');
+    background-position: center;
+    background-size: cover;
+    color: color.$white;
+    z-index: 0;
+    i{
+        font-size: 30px;
+    }
+    .platform-card{
+        margin-bottom: 30px;
+
+    }
+    .bg-shadow{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        z-index: -5;
+    }
+    .platform-card-title{
+        font-size: 18px;
+    }
+    .platform-card-text{
+        font-size: 14px;
+    }
+}
+.portfolio{
+    
+    .carousel-item{
+        position: relative;
+        height: 600px;
+        z-index: 0;
+    }
+    .carousel-caption{
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 40px 0;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .carousel-indicators{
+        padding-bottom: 20px;
+
+    }
+
+    .card{
+        img{
+            height: 200px;
+        }
+    }
+
+}
+.prices{
+  .price-card{
+    padding: 30px;
+    margin: 20px 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+    background-color: color.$white;
+    transition: transform 0.5s;
+    span{
+        font-weight: bold;
+
+    }
+    .price-tag{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    h3{
+        text-transform: uppercase;
+      
+        color: color.$secondary-color;
+    }
+    i{   
+        padding: 0 5px;
+        font-size: 24px;
+
+    }
+    .btn {
+        text-transform: uppercase;
+        padding: 10px 20px;
+    }
+}
+    .price-card:hover{
+        transform: scale(1.05);
+    }
+.contact-info{
+    margin-top: 30px;
+    padding: 15px 20px;
+    a{
+        text-decoration: none;
+    }
+}
+
+}
+.team{
+    position: relative;
+    background-image: url('../img/table-2577998_1920.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    h2{
+        color: color.$white;
+    }
+    .bg-shadow{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        z-index: -1;
+
+    }
+    .underline{
+        margin-bottom: 30px;
+    }
+    .card{
+        margin: 0px 10px;
+        transition: transform 0.4s;
+    img{
+        height: 150px;
+        object-fit: cover;
+    }
+    i{
+        font-size: 18px;
+        padding: 10px;
+        color: color.$main-color;
+    }
+    .card-title{
+        margin: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    }
+    .card-body{
+        height: 250px;
+    }
+    .card:hover {
+        transform: scale(.95);
+    }
+    
+}
+.achivements{
+    i{
+        padding: 10px;
+        font-size: 50px;
+        text-shadow: 0 0 2px #000000;
+    }
+    .achivements-list{
+        padding: 20px 0;
+    }
+    .achivements-value{
+        font-weight: bold;
+    }
+    .achivements-text{
+        text-transform: uppercase;
+    }
+
+}
+.contact{
+    position: relative;
+    background-image: url('../img/new-york-1745089_1920.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: color.$white;
+    z-index: 0;
+    .contact-us{
+        display: flex;
+        align-items: center;
+    }
+    h2{
+        font-weight: bold;
+    }
+    .underline{
+        background-color: color.$white;
+    }
+    h3{
+        color: color.$white;
+        text-transform: uppercase;
+    }
+    i{  
+        padding: 20px 10px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .contact-shadow{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 9, 27, .6);
+        z-index: -1;
+    }
+    .contact-us-info{
+        padding: 20px 10px;
+    }
+}
+@media(min-width: 375px){
+    h1{
+        font-size: 36px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+@media(min-width: 768px){
+    nav{
+        height: 78.5px;
+        .navbar-brand{
+            font-size: 35px;
+        }
+    }
+    header{
+        h1{
+            font-size: 42px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .prices {
+        .contact-info{
+            font-size: 18px;
+        }
+    }
+    .team{
+        .card{
+        img{
+        height: 300px;
+        object-fit: cover;
+        }
+        }
+}
+}
+
+@media(min-width:1200px) {
+    header{
+        .hero-img{
+        background-image: url('../img/playstation-g82d0a5379_1920.jpg');
+    }
+}
+    .platforms
+        {
+            background-image: url('../img/technology-2818664.jpg');
+        }
+    
+}
